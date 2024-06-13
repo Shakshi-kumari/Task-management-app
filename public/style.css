@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+header {
+    width: 100%;
+}
+
+nav {
+    background-color: transparent !important;
+    box-shadow: none;
+}
+
+nav .brand-logo {
+    font-size: 1.8rem;
+    margin-left: 10px;
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+input[type="date"]:focus + label, textarea:focus + label, input[type="text"]:focus + label {
+    color: #764ba2 !important;
+}
+
+input[type="date"]:focus, textarea:focus, input[type="text"]:focus {
+    border-bottom: 1px solid #764ba2 !important;
+    box-shadow: 0 1px 0 0 #764ba2 !important;
+}
+
+.collection .collection-item {
+    color: black;
+}
+
+.task-item {
+    margin-bottom: 10px;
+}
+
+.modal {
+    display: none;
+}
+
+.modal .modal-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}

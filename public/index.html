@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App</title>
+    <!-- Importing Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-wrapper">
+            <div class="container">
+                <a href="#" class="brand-logo">Task Management App</a>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section id="task-form" class="card">
+            <div class="card-content">
+                <span class="card-title">Add New Task</span>
+                <form id="add-task-form">
+                    <div class="input-field">
+                        <input type="text" id="title" name="title" required>
+                        <label for="title">Title</label>
+                    </div>
+                    <div class="input-field">
+                        <textarea id="description" name="description" class="materialize-textarea" required></textarea>
+                        <label for="description">Description</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="dueDate" name="dueDate" class="datepicker" required>
+                        <label for="dueDate">Due Date</label>
+                    </div>
+                    <button class="btn waves-effect waves-light" type="submit">Add Task</button>
+                </form>
+            </div>
+        </section>
+        <section id="task-list">
+            <h5>Tasks</h5>
+            <ul id="tasks" class="collection"></ul>
+        </section>
+    </main>
+
+    <!-- Edit Task Modal -->
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <h4>Edit Task</h4>
+            <form id="edit-task-form">
+                <input type="hidden" id="edit-id">
+                <div class="input-field">
+                    <input type="text" id="edit-title" name="title" required>
+                    <label for="edit-title">Title</label>
+                </div>
+                <div class="input-field">
+                    <textarea id="edit-description" name="description" class="materialize-textarea" required></textarea>
+                    <label for="edit-description">Description</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" id="edit-dueDate" name="dueDate" class="datepicker" required>
+                    <label for="edit-dueDate">Due Date</label>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit">Update Task</button>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <!-- Importing Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

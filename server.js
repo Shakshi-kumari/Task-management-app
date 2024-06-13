@@ -7,7 +7,6 @@ const tasksRouter = require('./routes/tasks');
 // Middleware to parse JSON bodies
 app.use(express.json());
 
-// Serve static files from the public directory
 app.use(express.static('public'));
 
 // Use the tasks router for the /tasks endpoint
