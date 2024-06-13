@@ -23,11 +23,12 @@ Ensure you have the following installed:
 
 ### Installation
 
-1. Clone the repository: git clone https://github.com/shakshi-kumari/task-management-app.git
-2. Navigate to the project directory: cd task-management-app
-3. Install dependencies: Npm install
-4. Start the server: npm start
-    -The server will run on http://localhost:3000.
+1. Clone the repository: `git clone https://github.com/shakshi-kumari/task-management-app.git`
+2. Navigate to the project directory: `cd task-management-app`
+3. Install dependencies: `Npm install`
+4. Start the server: `npm start`
+    -The server will run on `http://localhost:3000`.
+5. Browse on live link - https://task-management-app-ten-alpha.vercel.app/
 
 ### API Endpoints
 1. GET /tasks: Retrieve all tasks.
