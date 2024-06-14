@@ -22,15 +22,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     const taskItem = document.createElement('li');
                     taskItem.className = 'collection-item';
                     taskItem.innerHTML = `
-                        <div>
-                            <h5>${task.title}</h5>
-                            <p>${task.description}</p>
-                            <small>Due: ${task.dueDate}</small>
+                    <div class="outerTaskCard">
+                        <div class="internalTaskCard">
+                            <h5 class="title">${task.title}</h5>
+                            <p class="taskDueDate"><strong class="due">Due:</strong> ${task.dueDate}</p>
+                            <p class="taskDescription">${task.description}</p>
                         </div>
-                        <div>
+                        <div class="ActionButton">
                             <button class="btn waves-effect waves-light" onclick="editTask(${task.id})">Edit</button>
                             <button class="btn red waves-effect waves-light" onclick="deleteTask(${task.id})">Delete</button>
                         </div>
+                    </div>
                     `;
                     taskList.appendChild(taskItem);
                 });
