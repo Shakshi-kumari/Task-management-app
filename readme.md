@@ -37,8 +37,15 @@ Ensure you have the following installed:
 4. PUT /tasks/ : Update a task by ID.
 5. DELETE /tasks/ : Delete a task by ID.
 
+## Dependencies
+The following npm packages are used:
+
+express: Fast, unopinionated, minimalist web framework for Node.js.
+body-parser: Node.js body parsing middleware.
+
 ## Gif & Screenshots 
 <img src="https://github.com/Shakshi-kumari/Task-management-app/blob/main/image.png" alt="ss">
+<img src="https://github.com/Shakshi-kumari/Task-management-app/blob/main/result.gif" alt="ss">
 
 
 
