@@ -45,7 +45,7 @@ body-parser: Node.js body parsing middleware.
 
 ## Gif & Screenshots 
 <img src="https://github.com/Shakshi-kumari/Task-management-app/blob/main/image.png" alt="ss">
-<img src="https://github.com/Shakshi-kumari/Task-management-app/blob/main/result.gif" alt="ss">
+<img src="https://github.com/Shakshi-kumari/Task-management-app/blob/main/Task-Management-App (1).gif" alt="ss">
 
 
 
