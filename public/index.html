@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Management App</title>
-    <!-- Importing Materialize CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -38,9 +36,9 @@
                 </form>
             </div>
         </section>
-        <section id="task-list">
+        <section id="task-list" >
             <h5>Tasks</h5>
-            <ul id="tasks" class="collection"></ul>
+            <ul id="tasks" class="taskCard" class="collection"></ul>
         </section>
     </main>
 
@@ -59,7 +57,7 @@
                     <label for="edit-description">Description</label>
                 </div>
                 <div class="input-field">
-                    <input type="text" id="edit-dueDate" name="dueDate" class="datepicker" required>
+                    <input type="text" id="edit-dueDate" name="dueDate" required>
                     <label for="edit-dueDate">Due Date</label>
                 </div>
                 <button class="btn waves-effect waves-light" type="submit">Update Task</button>
@@ -69,8 +67,6 @@
             <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
         </div>
     </div>
-
-    <!-- Importing Materialize JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="script.js"></script>
 </body>
